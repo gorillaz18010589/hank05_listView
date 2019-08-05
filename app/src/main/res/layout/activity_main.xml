@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    tools:context=".MainActivity">
+    <!-- <ListView
+          android:id="@+id/listview" //:顯示出列表
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+
+          >-->
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+      <Button
+          android:id="@+id/add"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:text="add"
+          android:textSize="18dp"
+             android:onClick="addItem"
+          />
+
+      <Button
+          android:id="@+id/search"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="search"
+          android:textSize="18dp"
+          android:layout_toLeftOf="@id/add"
+          android:onClick="search"
+
+          />
+
+      <EditText
+          android:id="@+id/input"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_toLeftOf="@id/search"
+          />
+  </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>
